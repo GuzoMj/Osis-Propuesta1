@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grupo Kasby - Propuesta Institucional</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ECECEC, #C0C0C0);
+      color: #333;
+    }
+
+    header {
+      background: #1F2A44;
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      animation: slideDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #CBB26A;
+      margin-top: 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlide 1s ease-out forwards;
+    }
+
+    section:nth-of-type(even) {
+      animation-delay: 0.3s;
+    }
+
+    section:nth-of-type(odd) {
+      animation-delay: 0.6s;
+    }
+
+    .ubicacion img {
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 1s ease;
+    }
+
+    .ubicacion img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: linear-gradient(to right, #1F2A44, #334866);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .pdf-button {
+      display: inline-block;
+      background: #CBB26A;
+      color: #1F2A44;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .pdf-button:hover {
+      background: #E6C773;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeSlide {
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Grupo Kasby</h1>
+    <p>Vigilancia que protege lo que más valoras</p>
+  </header>
+
+  <section class="ubicacion">
+    <h2>Ubicación Estratégica</h2>
+    <img src="oasis.jpg" alt="Oasis Residencial">
+    <p>El fraccionamiento Oasis Residencial cuenta con acceso controlado, calles amplias y excelente visibilidad perimetral.</p>
+  </section>
+
+  <section>
+    <h2>Metodología de Vigilancia</h2>
+    <p>Rondas operativas 24/7, monitoreo por radio, reportes de anomalías y presencia física constante.</p>
+  </section>
+
+  <section>
+    <h2>Perfil del Personal</h2>
+    <p>Guardias capacitados, acreditados y uniformados. Evaluaciones continuas y formación en protocolo residencial.</p>
+  </section>
+
+  <section>
+    <h2>Costos y Paquete Institucional</h2>
+    <p>Opciones adaptadas al tamaño del fraccionamiento y servicios adicionales como videovigilancia, botón de pánico y respuesta móvil.</p>
+  </section>
+
+  <footer>
+    <p>Gracias por permitirnos presentar esta propuesta.<br>En Grupo Kasby, trabajamos cada día por ofrecer seguridad confiable, tecnología aplicada y presencia operativa que proteja lo que más valoras.</p>
+    <a href="#" class="pdf-button">Descargar propuesta en PDF</a>
+  </footer>
+
+</body>
+</html>
